@@ -11,6 +11,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
+//API VIRUS TOTAL
 type Response struct {
 	Success bool        `json:"Success"`
 	Data    interface{} `json:"Data"`
@@ -108,7 +109,6 @@ func getIPAdress(w http.ResponseWriter, r *http.Request) {
 
 }
 
-//vinay kumar y n
 func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/api/IPaddress/{ip}", getIPAdress).Methods("GET")
