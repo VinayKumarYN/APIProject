@@ -107,6 +107,8 @@ func getIPAdress(w http.ResponseWriter, r *http.Request) {
 	}
 
 }
+
+//vinay kumar y n
 func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/api/IPaddress/{ip}", getIPAdress).Methods("GET")
